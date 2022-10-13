@@ -1,9 +1,11 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 import 'dart:math';
 
-double _doubleInRange(Random source, num start, num end) =>
-    source.nextDouble() * (end - start) + 100;
+num _doubleInRange(Random source, int start, int end) =>
+    source.nextInt(end) + start;
 
 final random = Random();
 final coffees = List.generate(
@@ -11,7 +13,7 @@ final coffees = List.generate(
   (index) => Coffee(
     image: 'assets/coffee/${index + 1}.png',
     name: _names[index],
-    price: "23",
+    price: _doubleInRange(random, 60, 90),
     //  _doubleInRange(random, 3, 7),
   ),
 );
@@ -24,17 +26,20 @@ class Coffee {
   });
   final String name;
   final String image;
-  final String price;
+  final num price;
 }
 
 final _names = [
-  'Карамельный Холодный Кофе',
-  'Холодный Матча',
-  'Карамельный Бум Латте',
   'Взрывной Орех',
-  'Капучино',
-  'Тревожный Кофе',
+  'Тревожный Капучино',
   'Афроамериканский Чай',
+  'Карамельный Бум Бумыч',
+  'Один Лёд Тут другой Там',
+  'Джиган со льдом',
+  'Бомбезное Кофе',
   'Ирландское Кофе',
-  'Труфельное Кофе'
+  'Пушка со льдом',
+  'Байрактар(взрывная карамель)',
+  'Труфельное Кофе',
+  'Что то еще',
 ];
