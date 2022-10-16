@@ -11,7 +11,7 @@ class CoffeeConceptHome extends StatelessWidget {
     return Scaffold(
       body: GestureDetector(
         onVerticalDragUpdate: (details) {
-          if (details.primaryDelta! < -15) {
+          if (details.primaryDelta! < -1) {
             Navigator.of(context).push(
               PageRouteBuilder(
                 transitionDuration: const Duration(microseconds: 650),
