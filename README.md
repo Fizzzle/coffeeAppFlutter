@@ -1,16 +1,6 @@
-# coffee_app
+<h1> This is demo flutter project, test skills </h1>
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![photo](https://i.ibb.co/XprLMrK/1.jpg)
+![photo](https://i.ibb.co/9rsyTbs/2.jpg)
+![photo](https://i.ibb.co/xf8CgPb/3.jpg)
+![photo](https://i.ibb.co/Gdb2vJZ/4.jpg)
